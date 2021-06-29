@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54149e27-a451-40d9-86a3-d1e662f33580" name="Default Changelist" comment="1稿">
+    <list default="true" id="54149e27-a451-40d9-86a3-d1e662f33580" name="Default Changelist" comment="2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kuozhan.py" beforeDir="false" afterPath="$PROJECT_DIR$/kuozhan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skleran.py" beforeDir="false" afterPath="$PROJECT_DIR$/skleran.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -47,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kuozhan.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/skleran.py" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -73,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kuozhan" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="skleran" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="LR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,7 +88,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/kuozhan.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/skleran.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -106,7 +108,8 @@
       <updated>1624934913184</updated>
       <workItem from="1624934914912" duration="7415000" />
       <workItem from="1624950609917" duration="4849000" />
-      <workItem from="1624955547299" duration="2613000" />
+      <workItem from="1624955547299" duration="2793000" />
+      <workItem from="1624962062451" duration="15988000" />
     </task>
     <task id="LOCAL-00001" summary="配置txt">
       <created>1624951990955</created>
@@ -136,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624954614382</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2">
+      <created>1624958203357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624958203357</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,11 +168,23 @@
     <MESSAGE value="配置txt" />
     <MESSAGE value="1稿完成" />
     <MESSAGE value="1稿" />
-    <option name="LAST_COMMIT_MESSAGE" value="1稿" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/skleran.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LR$skleran.coverage" NAME="skleran Coverage Results" MODIFIED="1624949836453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/skleran_py$skleran.coverage" NAME="kuozhan Coverage Results" MODIFIED="1624954712999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/skleran_py$kuozhan.coverage" NAME="kuozhan Coverage Results" MODIFIED="1624957490363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/skleran_py$kuozhan.coverage" NAME="skleran Coverage Results" MODIFIED="1624983702599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
