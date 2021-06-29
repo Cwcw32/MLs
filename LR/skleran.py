@@ -16,6 +16,11 @@ from sklearn.metrics import confusion_matrix
 from pylab import mpl
 
 
+"""
+*****************************************************
+**********************画图相关函数**********************
+*****************************************************
+"""
 def plot_confusion_matrix(y, y_pred, cmap=plt.cm.Blues, title='混淆矩阵'):
     """
     绘制混淆矩阵
@@ -96,8 +101,17 @@ def sandiantu(plt, X, y, title='散点图'):
     plt.title(title)
 
 
+"""
+*****************************************************
+**********************手动实现相关函数**********************
+*****************************************************
+"""
+
+
+
 if __name__ == '__main__':
     # 设置支持中文字体
+    print('基础任务')
     mpl.rcParams['font.sans-serif'] = ['FangSong']  # 指定默认字体
     mpl.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题
 
@@ -188,7 +202,6 @@ if __name__ == '__main__':
     plt.close()
 
     # 测试集画混淆矩阵
-    lr.fit(X_test_std, y_test)
     y_test_pred = lr.predict(X_test_std)
     plot_confusion_matrix(y_test,
                           y_test_pred,
