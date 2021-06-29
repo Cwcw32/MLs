@@ -1,0 +1,176 @@
+# 常用科学计算工具
+import pandas as pd
+# 数据集训练集划分
+from sklearn.model_selection import train_test_split
+# 对特征进行标准化处理（特征缩放）
+from sklearn.preprocessing import StandardScaler
+# 画图用
+import matplotlib.pyplot as plt
+# 逻辑回归模型
+from sklearn.linear_model import LogisticRegression
+# 常用科学计算工具
+import numpy as np
+# 绘制混淆矩阵
+from sklearn.metrics import confusion_matrix
+# 支持中文格式
+from pylab import mpl
+
+labels = ['0', '1']
+
+
+def plot_confusion_matrix(cm, title='Confusion Matrix', cmap=plt.cm.binary):
+    """
+    绘制混淆矩阵
+    :param cm: 混淆矩阵
+    :param title: 图像标题
+    :param cmap: 热力图的颜色
+    :return:
+    """
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar()
+    xlocations = np.array(range(len(labels)))
+    plt.xticks(xlocations, labels, rotation=90)
+    plt.yticks(xlocations, labels)
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+
+
+def create_meshgrid_pic(plt, predict, X, Y, step=0.01):
+    """
+    画分类网格
+    :param plt: 画图对象
+    :param predict: 预测对象
+    :param X:
+    :param Y:
+    :param step:
+    :return:
+    """
+    # 确认训练集的边界
+    x_min, x_max = X[:].min() - .5, X[:].max() + .5
+    y_min, y_max = Y[:].min() - .5, Y[:].max() + .5
+    # 生成网络数据, xx所有网格点的x坐标,yy所有网格点的y坐标
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, step),
+                         np.arange(y_min, y_max, step))
+    # xx,yy的扁平化成一串坐标点（密密麻麻的网格点平摊开来）
+    d = np.c_[xx.ravel(), yy.ravel()]
+    # 对网格点进行预测
+    Z = predict(d)
+    # 预测完之后重新变回网格的样子，因为后面pcolormesh接受网格形式的绘图数据
+    Z = Z.reshape(xx.shape)
+    # class_size = np.unique(Z).size
+    # classes_color = ['#FFAAAA', '#AAFFAA', '#AAAAFF'][:class_size]
+    # cmap_light = ListedColormap(classes_color)
+    # # 接受网络化的x,y,z
+    # plt.pcolormesh(xx, yy, Z, cmap=cmap_light)
+    plt.contourf(xx, yy, Z, cmap=plt.cm.Spectral)  # 等位线
+
+
+def sandiantu(plt, X, y):
+    """
+    画目标标签为二分类的二维散点图
+    :param plt: 画图对象
+    :param X:
+    :param Y:
+    :param step:
+    :return:
+    """
+    plt.scatter(X[y == 0, 0], X[y == 0, 1], color='red', marker='o', label='P')  # 前50个样本的散点图
+    plt.scatter(X[y == 1, 0], X[y == 1, 1], color='blue', marker='x', label='NP')  # 中间50个样本的散点图
+    plt.xlabel('Age length')
+    plt.ylabel('EstimatedSalary length')
+    # 把说明放在左上角，具体请参考官方文档
+    plt.legend(loc=2)
+
+
+if __name__ == '__main__':
+    # 设置支持中文字体
+    mpl.rcParams['font.sans-serif'] = ['FangSong']  # 指定默认字体
+    mpl.rcParams['axes.unicode_minus'] = False  # 解决保存图像是负号'-'显示为方块的问题
+
+    # 加载数据
+    df = pd.read_csv('./data/Purchasing Desire.csv', header=0)
+
+    # 取其中两个特征
+    X = df[['Age', 'EstimatedSalary']].values
+    y = df.loc[:, 'Purchased'].values
+    #  print(X[y==0,0])
+    #  print(X[y==0,1])
+
+    # 画散点图
+    sandiantu(plt, X, y)
+    plt.show()
+    plt.close()
+    # print(X)
+    # print(y)
+
+    # 划分数据集和训练集
+    X_train, X_test, y_train, y_test = train_test_split(X,
+                                                        y,
+                                                        test_size=0.2,
+                                                        random_state=6)
+    # 数据归一化处理
+    sc = StandardScaler()
+    sc.fit(X_train)
+    X_train_std = sc.transform(X_train)
+    X_test_std = sc.transform(X_test)
+
+    # 逻辑回归模型训练
+    lr = LogisticRegression()
+    lr.fit(X_train_std, y_train)
+    # print(lr.score(X_train_std,y_train))
+    # print(X_train_std.shape[0])
+    # print(y_train)
+
+    '-----------------训练集结果-----------------'
+    train_right_counts = 0
+    for i in range(X_train_std.shape[0]):
+        # print(i)
+        original_val = y_train[i]
+        train_predict = lr.predict(X_train_std[i, :].reshape(1, -1))
+        if original_val == train_predict:
+            train_right_counts += 1
+    print("训练集准确率：", ((train_right_counts * 1.0) / X_train_std.shape[0])
+          )
+
+    # 训练集画散点图
+    plt.clf()
+    create_meshgrid_pic(plt, lr.predict, X_train_std[:, 0], X_train_std[:, 1])
+    sandiantu(plt, X_train_std, y_train)
+    plt.show()
+    plt.close()
+
+    # 训练集画混淆矩阵
+    y_train_pred = lr.predict(X_train_std)
+    cm = confusion_matrix(y_train, y_train_pred)
+    classes = list(set(y_train))
+    classes.sort()
+    plt.imshow(cm, cmap=plt.cm.Blues)
+    indices = range(len(cm))
+    plt.xticks(indices, classes)
+    plt.yticks(indices, classes)
+    # 热度显示仪
+    plt.colorbar()
+    # 就是坐标轴含义说明了
+    plt.xlabel('guess')
+    plt.ylabel('fact')
+    plt.title('训练集混淆矩阵')
+    # 显示数据，直观些
+    for first_index in range(len(cm)):
+        for second_index in range(len(cm[first_index])):
+            plt.text(first_index, second_index, cm[first_index][second_index])
+    # 显示
+    plt.show()
+
+    # 测试集 以下同理训练集
+    test_right_counts = 0
+    for i in range(X_test_std.shape[0]):
+        original_val = y_test[i]
+        predict_val = lr.predict(X_test_std[i, :].reshape(1, -1))
+        # print "Original:", original_val, " Predict:", predict_val, ("o" if original_val == predict_val else "x")
+        if original_val == predict_val:
+            test_right_counts += 1
+
+    print("测试集准确率：", ((test_right_counts * 1.0) / X_test_std.shape[0]))
+    plt.close('all')
+    # # 化边界函数
