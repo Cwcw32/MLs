@@ -1,0 +1,264 @@
+(myconda) root@0249071cb6b5:/mine_torch# python main.py
+/root/miniconda3/envs/myconda/lib/python3.8/site-packages/gensim/similarities/__init__.py:15: UserWarning: The gensim.similarities.levenshtein submodule is disabled, because the optional Levenshtein package <https://pypi.org/project/python-Levenshtein/> is unavailable. Install Levenhstein (e.g. `pip install python-Levenshtein`) to suppress this warning.
+  warnings.warn(msg)
+-------- Dataset Build! --------
+-------- Get Dataloader! --------
+Life is not easy for any of us! We have to work hard ,above all we have to believe in ourselves.We have to believe that each of us can do well, and when we find out what this is, we have to work hard until we succeed.Or only in this way can we become stronger, then defeat the enemy. Only by defeating the enemy can we have a bright future ,and build our country better.Of course, we can not just focus on one aspect. We should always care about the people around us and help those in trouble. Only in this way can the society become more harmonious and the national atmosphere become better. To sum up, we should be confident and kind. This is the knowledge of life, and it is a lifetime thing.
+['Life is not easy for any of us', ' We have to work hard ,above all we have to believe in ourselves', 'We have to believe that each of us can do well, and when we find out what this is, we have to work hard until we succeed', 'Or only in this way can we become stronger, then defeat the enemy', ' Only by defeating the enemy can we have a bright future ,and build our country better', 'Of course, we can not just focus on one aspect', ' We should always care about the people around us and help those in trouble', ' Only in this way can the society become more harmonious and the national atmosphere become better', ' To sum up, we should be confident and kind', ' This is the knowledge of life, and it is a lifetime thing', '']
+loading projection weights from light_Tencent_AILab_ChineseEmbedding.bin
+KeyedVectors lifecycle event {'msg': 'loaded (143613, 200) matrix of type float32 from light_Tencent_AILab_ChineseEmbedding.bin', 'binary': True, 'encoding': 'utf8', 'datetime': '2021-07-22T06:29:17.996615', 'gensim': '4.0.1', 'python': '3.8.2 | packaged by conda-forge | (default, Apr 24 2020, 08:20:52) \n[GCC 7.3.0]', 'platform': 'Linux-4.19.0-14-amd64-x86_64-with-glibc2.10', 'event': 'load_word2vec_format'}
+生活对我们任何人来说都不容易 Life is not easy for any of us
+生活对我们任何人来说都不容易
+1   2.761198891769736   The world’s ability to do the world.
+2   2.761198891769736   Consider all our lives.
+3   11.59119922599073   No one of us is easy to imagine us
+4   5.522397783539471   No matter for anyone.
+5   7.267884212102741   No one is easy to live on us
+6   5.11459870708889   It is no easy to live in our lives.
+7   11.044795567078939   No easy for anyone?
+8   2.1504238591261657   We are no longer able to live in our lives
+9   3.8902180856807296   There is no easy way to live for anyone in our lives.
+10   5.522397783539471   It’s hard to live for anyone.
+11   2.761198891769736   The Unknown No
+12   6.567274736060395   No one for us
+13   2.761198891769736   We don’t
+14   22.089591134157878   It is not easy to live in us
+15   5.522397783539471   No Time for All
+16   5.522397783539471   How to live in us No
+17   6.567274736060395   Life Cannot Wake us
+18   12.22307556087252   Life Is Not easy for anyone
+19   2.761198891769736   We’re Not-Dearly
+20   5.522397783539471   Life Can No No
+超出阈值！
+origin: 生活对我们任何人来说都不容易
+result: 任何人的生活对我们来说都不容易
+中文相似度： 0.9991495013237
+我们必须努力，最重要的是我们必须相信自己  We have to work hard ,above all we have to believe in ourselves
+我们必须努力，最重要的是我们必须相信自己
+1   3.737437943747671   We must be sure, and must be able to do not do.
+2   3.4815016528590457   We must be successful, most important, we must believe that they must believe.
+3   6.033104985460151   We must seek to work, and most importantly, we must believe that their own.
+4   13.06511329838856   We must work, above all, we must believe that they are.
+5   3.0165524927300758   We must do well, and most importantly, we must convince themselves that they are.
+6   12.571192676522521   We must do, above all, we must believe that our own.
+7   11.325857976105244   We must work, above all, we must believe that they are our own.
+8   4.444587794585869   We must work, and most importantly, we must believe ourselves.
+9   13.508625657351418   We must work, above all, we must believe ourselves.
+10   13.508625657351418   We must work, above all, we must believe ourselves.
+11   11.704569597597914   We must do all, above all, we must believe that they are.
+12   6.482993212910186   We must work, and above all, we must believe that we must believe ourselves.
+13   8.032276872815308   We must work, and above all, we must believe ourselves.
+14   13.508625657351418   We must work, above all, we must believe ourselves.
+15   4.016138436407654   Above all, we must believe our own
+16   4.016138436407654   Above all, we must be sure ourselves.
+17   4.444587794585869   We must work, and most important, we must believe ourselves.
+18   4.444587794585869   We must work, most importantly, we must believe ourselves.
+19   4.246549372656572   We must work, and most importantly, we must trust ourselves.
+20   19.674979811155634   We must work, above all, we must believe in ourselves.
+origin: 我们必须努力，最重要的是我们必须相信自己
+result: We must work, above all, we must believe in ourselves.  19.674979811155634
+我们必须相信我们每个人都能够做得很好，而且当我们发现这是什么时，我们必须努力工作直到我们成功 We have to believe that each of us can do well, and when we find out what this is, we have to work hard until we succeed
+我们必须相信我们每个人都能够做得很好，而且当我们发现这是什么时，我们必须努力工作直到我们成功
+1   3.5198870526684183   We must be able to do so, but we do not do so, we do not do not do so?
+2   7.797595066988328   We must believe that our people need to be better, and we know what we know that we will have to be successful until we have to be successful until we know.
+3   11.600056329986565   We must believe that we have to do so well, and we have to find that we can do enough until we have to be successful until our success.
+4   21.836245334292013   We must believe that everyone can do well, and we find it hard to find it, we must hard to find it until we succeed.
+5   27.720767003806888   We must believe that everyone can do well, and, when we find it, we must work hard until we find it.
+6   29.505138076099747   We must believe that everyone can do well, and we find it hard to find it, and we must work hard until we succeed.
+7   20.587409535374668   We must believe that everyone can do well, and we will find it hard to work until we succeed.
+8   35.79692129309656   We must believe that everyone can do well well, and when we find it, we must work hard until we succeed.
+9   18.852104513558068   We must believe that everyone can do well, and we will find it hard to work until we find it.
+10   20.587409535374668   We must believe that everyone can do well, and we will find it hard to work until we succeed.
+11   18.52972751417938   We must believe that everyone can do well, and we must work hard enough until we find it.
+12   23.36893631298636   We must believe that we all have done well, and we must work hard when we find it, we must work hard until we succeed.
+13   27.068056309831366   We must believe that everyone can do well, and we must work hard until we find it hard enough, until we succeed.
+14   17.543860064617768   We must believe that everyone can do well, and we will find it hard to find it, until we can do it.
+15   29.08651942345129   We must believe that everyone can do well, and if we see what it, we must work hard until we succeed.
+16   24.276887859707394   We must believe that everyone can do well, and we must work hard when we find it, we must work hard enough until we succeed.
+17   27.457624862096807   We must believe that we everyone can do well, and we must work hard until we succeed.
+18   26.98809072033866   We must believe that everyone can do well, and we must work hard until we succeed.
+19   26.98809072033866   We must believe that everyone can do well, and we must work hard until we succeed.
+20   26.98809072033866   We must believe that everyone can do well, and we must work hard until we succeed.
+超出阈值！
+origin: 我们必须相信我们每个人都能够做得很好，而且当我们发现这是什么时，我们必须努力工作直到我们成功
+result: 一定要相信我们任何人都可以做的不错，而且在它被我们发现时，直到我们成功都要坚持努力工作
+中文相似度： 0.9642442067464193
+或者说这样做我们才能变强，才能够打败敌人 Or only in this way can we become stronger, then defeat the enemy
+或者说这样做我们才能变强，才能够打败敌人
+1   2.725762876425168   If you do not do so, they can do so, they can do so?
+2   4.723482921640501   Or it would be a strong sense of hope that it will have to be the enemy.
+3   7.141816289329644   Or, to say, we will be able to destroy the enemy.
+4   12.571192676522521   Or consider doing so, we will be able to defeat the enemy.
+5   7.705829865251781   Or, perhaps, we will be able to defeat the enemies of the enemy.
+6   3.737437943747671   Or consider doing so will we have to be able to defeat enemies.
+7   3.479789360876994   Or it will be able to do so, to defeat enemies of enemies.
+8   12.571192676522521   Or it is possible that we can be able to defeat the enemy.
+9   11.325857976105244   Or, say, we can be able to defeat the enemy of the enemy.
+10   10.903051505700674   Or consider this to be a more powerful leader, but we can defeat the enemy.
+11   4.246549372656572   Or if we do so, we can be able to defeat enemies.
+12   12.011055432195764   Or let’s do so will we be able to defeat the enemy.
+13   12.011055432195764   Or perhaps we will be able to defeat the enemy.
+14   11.359354890271161   Or it will be possible to defeat the enemy.
+15   3.377156414337854   Or we will be able to overcome our enemies if it is not.
+16   3.737437943747671   Or perhaps we will be able to win our enemy by doing so.
+17   11.359354890271161   Or let’s come to be able to defeat the enemy.
+18   5.366912772746423   Or we can do so if we do so will we be able to defeat the enemies.
+19   9.69433599959069   Or we will be able to prevail. We will be able to defeat the enemy.
+20   12.011055432195764   Or if doing so will we be able to defeat the enemy.
+origin: 或者说这样做我们才能变强，才能够打败敌人
+result: Or consider doing so, we will be able to defeat the enemy.  12.571192676522521
+打败敌人才有美好的未来，才能更好的建设祖国  Only by defeating the enemy can we have a bright future ,and build our country better
+打败敌人才有美好的未来，才能更好的建设祖国
+1   2.719665272174911   The West’s leaders must be able to address the future.
+2   9.672649511413097   It is better for the future, and better for the future.
+3   5.751391809950023   The enemy of the enemy is a better way for the future.
+4   5.439330544349821   It is a better way to defeat the enemy.
+5   5.751391809950023   The enemy can be better equipped with a better future.
+6   3.4197980307804725   The enemies of defeated enemies can be better able to build a home country.
+7   3.4197980307804725   The enemies of defeat are good for a better future to build their home country.
+8   10.878661088699644   To defeat the enemy can be better able to build a country with a better future.
+9   3.2342452920962157   The enemy is better able to defeat its enemies in the future.
+10   6.019608768705656   It is better to defeat the enemy to build a better home country.
+11   3.2342452920962157   The enemy is better able to win a better future.
+12   5.061867434834413   It is better to defeat the enemy that is better built home.
+13   9.92043523258434   A better place to defeat the enemy can be a better place to build a home country.
+14   5.061867434834413   The enemy can be better built to defeat its enemy.
+15   3.2342452920962157   If the enemies who are defeated are better able to build their home country.
+16   3.2342452920962157   The enemy is well known for a better future.
+17   5.751391809950023   The enemy can be better built for a better future.
+18   3.4197980307804725   A better position to beat the enemies to build a better future.
+19   3.0098043843528286   The enemy is better positioned to build its home.
+20   3.5792807886387674   The enemy is better able to build their home country for a better future.
+origin: 打败敌人才有美好的未来，才能更好的建设祖国
+result: To defeat the enemy can be better able to build a country with a better future.  10.878661088699644
+当然，我们也不能只注重一方面 Of course, we can not just focus on one aspect
+当然，我们也不能只注重一方面
+1   23.462350320528007   Of course, we must be able to make it.
+2   18.88665593413212   Of course, we should not be applied only to the new economy.
+3   18.758830578240925   Of course, we should not focus only on only on the first time.
+4   24.640511033537816   Of course, we should not focus only on this issue.
+5   16.481158920498064   Of course, we should not be focused solely on the basis of our policies.
+6   24.640511033537816   Of course, we should not focus only on our own.
+7   14.281104973195953   Of course, we should not be able to focus only on the side of the world.
+8   24.640511033537816   Of course, we should not focus only on this issue.
+9   18.758830578240925   Of course, we should not focus only on the basis of this effort.
+10   19.767437766271104   Of course, we shouldn’t focus only on both sides of the road.
+11   24.640511033537816   Of course, we should not focus only on each other.
+12   18.758830578240925   Of course, we should not focus only on both sides of the Atlantic.
+13   19.767437766271104   Of course, we cannot focus only on both sides of the world.
+14   24.640511033537816   Of course, we should not focus solely on both sides.
+15   26.985534666825092   Of course, we should not focus only on.
+16   26.477952261405967   Of course, we can’t focus on just on our own.
+17   26.985534666825092   Of course, we should not focus only on.
+18   22.499268274284365   Of course, we should not focus only on the other hand.
+19   25.965358893403383   Of course, we should not be focused exclusively on.
+20   18.758830578240925   Of course, we should not focus only on both sides of the Atlantic.
+超出阈值！
+origin: 当然，我们也不能只注重一方面
+result: 但是只看到一方面也是不行的
+中文相似度： 0.7731664776802063
+我们还要时常关心身边的人，帮助有困难的人  We should always care about the people around us and help those in trouble
+我们还要时常关心身边的人，帮助有困难的人
+1   2.4617934274488045   We must do not be able to do so, but they can do so.
+2   2.8398387225677895   We are often right to know that they are right.
+3   4.016138436407654   We tend to worry about those who do not want to help them.
+4   3.737437943747671   We tend to be concerned about those who are concerned with them.
+5   8.493098745313148   We are often worried about the others, and help them do not.
+6   6.285596338261262   And we are often concerned with those who care about it.
+7   6.270144942040139   We also often care about those of us who are in the face of these difficulties.
+8   3.737437943747671   We are often concerned with the difficulties of helping those who are hard.
+9   4.09669781588218   We are also more concerned about those who are doing things that are difficult to help those who are hard.
+10   6.3823708549490314   We also often care about those who are close, helping to help those who are hard.
+11   3.737437943747671   We are also more concerned with those who are more difficult to help.
+12   3.737437943747671   We are also concerned with those who are also concerned with the difficulties.
+13   3.479789360876994   We tend to be more concerned with those who are hard to help them.
+14   7.141816289329644   We often care about those around them, helping those who are difficult.
+15   2.725762876425168   Those who are too often concerned with this, helping those who are hard to help.
+16   4.016138436407654   We are also more concerned about those who are hard to help them.
+17   5.073216355122755   We are also frequently focused on those who are struggling to help those who are hard.
+18   4.33173054551354   We often care about those who are too close to it, helping those who are hard to help them.
+19   5.073216355122755   We are also often concerned with those who are hard to help those who are difficult.
+20   6.219512039648859   We also have more to care about those of us who are hard to help those with it.
+origin: 我们还要时常关心身边的人，帮助有困难的人
+result: We are often worried about the others, and help them do not.  8.493098745313148
+只有这样社会才能变得更加和谐，国家风气才能变得更好  Only in this way can the society become more harmonious and the national atmosphere become better
+只有这样社会才能变得更加和谐，国家风气才能变得更好
+1   2.908317710573757   It is not to be able to ensure that the country’s government can do so.
+2   7.955891555490761   Only the society can be better off, and the country can be better.
+3   6.917184228205474   Only then can society be more divided, and the country’s oil is the better.
+4   10.343603005129705   Only then can society become more self-inflicted.
+5   12.874330508144842   Only then will society become more competitive, and the country can it better.
+6   10.673194868330345   Only then can society become more coherent and better, and the country can it be better off.
+7   10.988536550999948   Only then will society become more secure, and the country’s wind will it be better off.
+8   11.251329738544614   Only then can society become more coherent and better.
+9   12.09431425432932   Only then can society become more peaceful, and the country can it better for better.
+10   20.14941615706457   Only then can society become more harmonious, and the country get better off.
+11   14.247788801610149   Only then can the world become more harmonious, and the country get better off.
+12   12.874330508144842   Only then can society become more peaceful, and the country’s wind is better off.
+13   19.56475149792291   Only then will society become more harmonious, and the country be better off.
+14   7.955891555490761   Only then will societies become more stable, and the country can get better off.
+15   11.251329738544614   Only then can societies become more harmonious, and countries get better off.
+16   9.103526405546068   Only then can societies become more peaceful, and the world can the better.
+17   20.14941615706457   Only then can society become more harmonious, and the country be better off.
+18   6.437165254072419   Only then can societies become more peaceful, and countries get better off.
+19   20.14941615706457   Only then can society become more harmonious, and the country be better off.
+20   12.09431425432932   Only then can society become more coherent, and the country’s wind power be better off.
+超出阈值！
+origin: 只有这样社会才能变得更加和谐，国家风气才能变得更好
+result: 更和谐的社会，更好的国家风气都取决于这个
+中文相似度： 0.9432830810546875
+综上所述，我们要自信善良  To sum up, we should be confident and kind
+综上所述，我们要自信善良
+1   1.4063699685797675   The idea that it is not to do not do not do not.
+2   21.507319161298934   In this case, we should be good for good reasons.
+3   8.792330837055141   In the Financial Times, we need to be confident of self-interest.
+4   39.281465090051306   In the Financial Times, we should be confident
+5   26.269098944241588   What we should be confident in the Financial Times
+6   15.619699684601281   “We should be confident of good.”
+7   4.196114906296549   What we call for self-confidence in good
+8   39.281465090051306   What is known, we should be confident?
+9   26.269098944241588   What we should be confident in the Wells
+10   30.457527453468213   To the extent that, we should be confident in good faith.
+11   8.403703759902122   To put it, we need self-confidence in good faith.
+12   4.196114906296549   We should confidence in the Good Management
+13   7.593603555191143   What we say is, we need to self-confidence good?
+14   4.196114906296549   What we think is good for self-confidence
+15   2.0980574531482743   On the basis of self-confidence
+16   35.5433394487517   According to the World Economic Forum, we should be confident
+17   4.196114906296549   What we have said is good for confidence
+18   15.619699684601281   What is going on, we should self-confidence?
+19   3.435488317233919   What is certain is that we need confidence in the Good?
+20   2.0980574531482743   On the basis of our self-confidence
+超出阈值！
+origin: 综上所述，我们要自信善良
+result: 总而言之，自信善良被我们需要
+中文相似度： 0.8613875806331635
+这是做人的学问，是一辈子的事情  This is the knowledge of life, and it is a lifetime thing
+这是做人的学问，是一辈子的事情
+1   5.026311785824354   This is not the only way to do not do not have to do the same.
+2   13.065113298388567   It is a good thing to say that it is a man.
+3   3.7644257151903666   That is what happens to be done to ask, as a whole.
+4   10.04916995660316   This is a man who asked, one of the children’s life.
+5   3.673526562988939   That is what is called for.
+6   12.35622127262679   It’s a doctor who asked, is a lifetime.
+7   7.347053125977879   It is a student to ask what is a generation of generations.
+8   6.837203339116283   It’s a writer, and a child’s school?
+9   6.837203339116283   It is a man who asked what is a generation ago.
+10   19.338531381761726   It’s a man who told me that it is a lifetime.
+11   11.498759556447217   It’s a woman to ask what is a lifetime.
+12   9.669265690880861   It is the study of what is known as a lifetime.
+13   10.224003680109194   This is a question of what a life of life?
+14   10.297830477691114   It is a man who asked, and is a life of life.
+15   11.498759556447217   It’s a lifetime to ask what is a lifetime.
+16   12.35622127262679   That’s a person’s message is that it is a generation ago.
+17   3.673526562988939   It’s a citizen’s study that is what we know.
+18   3.0890553181566975   What’s to do is to ask for?
+19   6.837203339116283   What’s to do is a child’s work, a child’s?
+20   7.347053125977879   It’s the course of life for a generation.
+origin: 这是做人的学问，是一辈子的事情
+result: It’s a man who told me that it is a lifetime.  19.338531381761726
+ 
+整个段落中成功输出的句子数量（英文）： 5
+整个段落中成功输出的句子数量（中文）： 5
+高于阈值的句子数量： 4
+(myconda) root@0249071cb6b5:/mine_torch# 
